@@ -23,7 +23,6 @@
   },
   "scripts": {
     "test": "jest",
-    "prepare": "npm run build",
     "build": "rm -fr dist/* && npx tsc -p tsconfig.json && npx tsc -p tsconfig-cjs.json && sh ./addhybridpackage.sh"
   },
   "main": "dist/cjs/index.js",
