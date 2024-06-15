@@ -25,4 +25,4 @@ find src/abi -name '*.json' -exec cp {} dist/cjs/abi \;
 find src/abi -name '*.json' -exec cp {} dist/mjs/abi \;
 
 # add import assertions to mjs
-sed -i 's/import ERC20 from \"..\/abi\/ERC20.json\"/import ERC20 from \"..\/abi\/ERC20.json\" assert { type: \"json\" }/g' dist/mjs/helper/util.js
+# sed -i 's/import ERC20 from \"..\/abi\/ERC20.json\"/import ERC20 from \"..\/abi\/ERC20.json\" assert { type: \"json\" }/g' dist/mjs/helper/util.js
